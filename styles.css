@@ -1,0 +1,67 @@
+@keyframes rotateOnLoad {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 5400deg;
+    }
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    /* bottom: 0; */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    rotate: 0deg;
+    animation-name: rotateOnLoad;
+    animation-duration: 1s;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    max-width: 75%;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    background: white;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+} #navbar a:hover {
+    background: lightgray;
+}
+.border-r {
+    border-right: 3px dotted black;
+}

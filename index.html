@@ -2,6 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
         <!-- Title of page -->
         <title>Andrew Cornish Music</title>
     </head>
@@ -17,75 +19,13 @@
             <img id="logo" src="assets/logo.png"/>
             
             <nav id="navbar">
-                <a class="nav-link" href="projects/index.html">projects</a>
-                <a class="nav-link" href="about/index.html">about</a>
-                <a class="nav-link" href="events/index.html">events</a>
-                <a class="nav-link" href="resume/index.html">resume</a>
+                <a class="nav-link border-r" href="projects/index.html">projects</a>
+                <a class="nav-link border-r" href="about/index.html">about</a>
+                <a class="nav-link border-r" href="events/index.html">events</a>
+                <a class="nav-link border-r" href="resume/index.html">resume</a>
                 <a class="nav-link" href="contact/index.html">contact</a>
             </nav>
         </div>
-
-    <!-- CSS content -->
-    <style>
-        @keyframes rotateOnLoad {
-            0% {
-                rotate: 0deg;
-            }
-            100% {
-                rotate: 5400deg;
-            }
-        }
-
-        /* Style the video: 100% width and height to cover the entire window */
-        #background-video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        }
-
-        /* Add some content at the bottom of the video/page */
-        .content {
-            position: fixed;
-            /* bottom: 0; */
-            color: #f1f1f1;
-            width: 100%;
-            padding: 20px;
-        }
-        .content img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            rotate: 0deg;
-            animation-name: rotateOnLoad;
-            animation-duration: 1s;
-        }
-
-        #navbar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 40px;
-            max-width: 75%;
-            text-decoration: none;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        #navbar a {
-            text-decoration: none;
-            color: black;
-            background: white;
-            align-items: center;
-            padding-left: 15px;
-            padding-right: 15px;
-        } #navbar a:hover {
-            background: lightgray;
-        }
-    </style>
 
     <!-- JavaScript content -->
     <script>
